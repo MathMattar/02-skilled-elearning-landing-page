@@ -1,0 +1,50 @@
+@import '../global/root';
+
+body {
+  header {
+
+    .header__image {
+      margin: 0 8px;
+      @include background("../images/image-hero-mobile.png");
+      height: 301px;
+    }
+
+    nav {
+      @include flex (row, $justify: space-between, $items: center);
+      margin-bottom: 38px;
+
+      img {
+        width: 89px;
+        height: 23px;
+      }
+
+      .button--nav {
+        @include button($solid: $primary, $padding: 9px 24px 11px);
+
+        &:hover {
+          @include button($solid: $hover-primary);
+        }
+      }
+    }
+
+    .header__content {
+      margin-bottom: 46px;
+
+      p {
+        margin: 26px 0 24px;
+      }
+
+      .button--header {
+        @include button($gradient: $gradient-ligth, $padding: 15px 38px);
+
+        &::before {
+          @include button-hover();
+        }
+
+        &:hover::before {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

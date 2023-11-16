@@ -1,0 +1,27 @@
+@import '../global/root';
+
+body {
+  footer {
+    nav {
+      @include flex (row, $justify: space-between, $items: center);
+      padding: 36px 16px;
+
+      img {
+        width: 89px;
+        height: 23px;
+      }
+
+      .button--footer {
+        @include button($gradient: $gradient-dark, $padding: 9px 24px 11px);
+
+        &::before {
+          @include button-hover();
+        }
+
+        &:hover::before {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

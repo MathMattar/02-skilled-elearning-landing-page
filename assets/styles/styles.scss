@@ -1,1 +1,5 @@
-
+@use './global/root';
+@use './global/global';
+@use './components/header';
+@use './components/main';
+@use './components/footer';

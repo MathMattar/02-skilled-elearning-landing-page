@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+}
+body header {
+  padding: 16px 16px 70px;
+  width: 100%;
+}
+body header h1 {
+  font-size: 40px;
+  line-height: 51px;
+  color: #13183F;
+}
+body main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 40px;
+  background: linear-gradient(180deg, white 0%, #F0F1FF 100%);
+  padding: 16px 16px 80px;
+  width: 100%;
+}
+body main .box {
+  padding: 56px 29px 32px 28px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.04);
+  width: 100%;
+  max-width: 350px;
+  max-height: 322px;
+}
+body main .box h2 {
+  font-size: 24px;
+  line-height: 32px;
+  color: white;
+}
+body main .box h3 {
+  font-size: 20px;
+  line-height: 25px;
+  color: #13183F;
+}
+body main .box a {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #F74780;
+  text-decoration: none;
+}
+body main .box a:hover {
+  color: #FFA7C3;
+  cursor: pointer;
+}
+body footer {
+  width: 100%;
+  background-color: #13183F;
+}
+body .button {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 700;
+  color: white;
+  border: none;
+  border-radius: 28px;
+  position: relative;
+  cursor: pointer;
+}
+body h1,
+body h2,
+body h3 {
+  font-weight: 800;
+}
+body p {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+  color: #83869A;
+}
+
+body header .header__image {
+  margin: 0 8px;
+  background: url("../images/image-hero-mobile.png") no-repeat center/cover;
+  height: 301px;
+}
+body header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 38px;
+}
+body header nav img {
+  width: 89px;
+  height: 23px;
+}
+body header nav .button--nav {
+  padding: 9px 24px 11px;
+  background-color: #13183F;
+}
+body header nav .button--nav:hover {
+  background-color: #666CA3;
+}
+body header .header__content {
+  margin-bottom: 46px;
+}
+body header .header__content p {
+  margin: 26px 0 24px;
+}
+body header .header__content .button--header {
+  padding: 15px 38px;
+  background: linear-gradient(to bottom, #FF6F48, #F02AA6);
+}
+body header .header__content .button--header::before {
+  content: "";
+  position: absolute;
+  background: rgba(255, 255, 255, 0.5);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: none;
+  border-radius: 28px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+body header .header__content .button--header:hover::before {
+  opacity: 1;
+}
+
+body main .box--gradient {
+  background-image: linear-gradient(to bottom, #FF6F48, #F02AA6);
+  padding: 24px 29px 32px 28px;
+}
+body main .box p {
+  padding: 16px 0 24px;
+}
+
+body footer nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 36px 16px;
+}
+body footer nav img {
+  width: 89px;
+  height: 23px;
+}
+body footer nav .button--footer {
+  padding: 9px 24px 11px;
+  background: linear-gradient(to bottom, #4851FF, #F02AA6);
+}
+body footer nav .button--footer::before {
+  content: "";
+  position: absolute;
+  background: rgba(255, 255, 255, 0.5);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: none;
+  border-radius: 28px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+body footer nav .button--footer:hover::before {
+  opacity: 1;
+}/*# sourceMappingURL=styles.css.map */

@@ -1,1 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap');
 
+$font: 'Plus Jakarta Sans', sans-serif;
+
+$primary: #13183F;
+$hover-primary: #666CA3;
+$secondary: #83869A;
+$tertiary: #F74780;
+$hover-tertiary: #FFA7C3;
+$gradient-ligth: linear-gradient(to bottom, #FF6F48, #F02AA6);
+$gradient-dark: linear-gradient(to bottom, #4851FF, #F02AA6);
+
+$breakpoints: (
+  "desktop": px,
+  "tablet": px,
+);
+
+@mixin mobile-heading-large {
+  font-size: 40px;
+  line-height: 51px;
+  color: $primary;
+}
+
+@mixin mobile-heading-medium {
+  font-size: 24px;
+  line-height: 32px;
+  color: white;
+}
+
+@mixin mobile-heading-small {
+  font-size: 20px;
+  line-height: 25px;
+  color: $primary;
+}
+
+@mixin mobile-body {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+  color: $secondary
+}
+
+@mixin link {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 700;
+  color: $tertiary;
+  text-decoration: none;
+}
+
+@mixin link-hover {
+  color: $hover-tertiary;
+  cursor: pointer;
+}
+
+@mixin box($padding) {
+  padding: $padding;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.04);
+  width: 100%;
+  max-width: 350px;
+  max-height: 322px;
+}
+
+@mixin button-default {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 700;
+  color: white;
+  border: none;
+  border-radius: 28px;
+  position: relative;
+  cursor: pointer;
+}
+
+@mixin button ($gradient: null, $solid: null, $padding: null) {
+
+  @if $padding {
+    padding: $padding;
+  }
+
+  @if $gradient {
+    background: $gradient;
+  }
+
+  @if $solid {
+    background-color: $solid;
+  }
+}
+
+@mixin button-hover {
+  content: "";
+  position: absolute;
+  background: rgba(255, 255, 255, 0.5);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: none;
+  border-radius: 28px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+@mixin flex($direction: null, $wrap: null, $content: null, $justify: null, $items: null) {
+  display: flex;
+
+  @if $direction {
+    flex-direction: $direction;
+  }
+
+  @if $wrap {
+    flex-wrap: $wrap;
+  }
+
+  @if $content {
+    align-content: $content;
+  }
+
+  @if $justify {
+    justify-content: $justify;
+  }
+
+  @if $items {
+    align-items: $items;
+  }
+}
+
+@mixin background($url: null, $size: null, $position: null) {
+
+  @if $url {
+    background: url($url) no-repeat center / cover;
+  }
+
+  @if $size {
+    background-size: $size;
+  }
+
+  @if $position {
+    background-position: $position;
+  }
+}
+
+@mixin position ($position: null, $index: null, $top: null, $right: null, $bottom: null, $left: null) {
+
+  @if $position {
+    position: $position;
+  }
+
+  @if $index {
+    z-index: $index;
+  }
+
+  @if $top {
+    top: $top;
+  }
+
+  @if $right {
+    right: $right;
+  }
+
+  @if $bottom {
+    bottom: $bottom;
+  }
+
+  @if $left {
+    left: $left;
+  }
+}
+
+@mixin responsive ($width, $type: min, ) {
+  @if map\_has\_key($breakpoints, $width) {
+    $width: map\_get($breakpoints, $width);
+
+    @if $type ==max {
+      $width: $width - 1px;
+    }
+
+    @media only screen and (#{$type}-width: $width) {
+      @content;
+    }
+  }
+}
+
+
+
+
+// @mixin desktop-heading-extra-large {
+//   font-size: 56px;
+//   line-height: 70px;
+//   color: $primary;
+// }
+
+// @mixin desktop-body {
+//   font-size: 18px;
+//   line-height: 28px;
+//   font-weight: 500;
+//   color: $secondary;
+// }
