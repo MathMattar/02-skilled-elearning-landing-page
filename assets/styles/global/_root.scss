@@ -12,7 +12,7 @@ $gradient-dark: linear-gradient(to bottom, #4851FF, #F02AA6);
 
 $breakpoints: (
   "desktop": px,
-  "tablet": px,
+  "tablet": 768px,
 );
 
 @mixin mobile-heading-large {
@@ -54,13 +54,21 @@ $breakpoints: (
 }
 
 @mixin box($padding) {
+  @include position(relative, 1);
   padding: $padding;
-  background-color: white;
   border-radius: 10px;
   box-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.04);
   width: 100%;
   max-width: 350px;
   max-height: 322px;
+}
+
+@mixin box-images ($url) {
+  content: "";
+  @include background($url);
+  @include position(absolute, 2, -24px, 260px);
+  width: 56px;
+  height: 56px;
 }
 
 @mixin button-default {

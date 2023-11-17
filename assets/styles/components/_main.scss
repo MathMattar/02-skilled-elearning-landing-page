@@ -12,5 +12,25 @@ body {
         padding: 16px 0 24px;
       }
     }
+
+    .box--animation::after {
+      @include box-images("../images/icon-animation.svg");
+    }
+
+    .box--design::after {
+      @include box-images("../images/icon-design.svg");
+    }
+
+    .box--photography::after {
+      @include box-images("../images/icon-photography.svg");
+    }
+
+    .box--crypto::after {
+      @include box-images("../images/icon-crypto.svg");
+    }
+
+    .box--business::after {
+      @include box-images("../images/icon-business.svg");
+    }
   }
 }

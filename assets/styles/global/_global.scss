@@ -7,7 +7,7 @@
 body {
   font-family: $font;
   width: 100%;
-  overflow-x: hidden;
+  // overflow-x: hidden;
 
   header {
     padding: 16px 16px 70px;
@@ -64,5 +64,12 @@ body {
   p {
     @include mobile-body();
   }
+}
 
+@include responsive ("tablet") {
+  body {
+    header {
+      padding: 24px 40px 186px 39px;
+    }
+  }
 }
