@@ -10,6 +10,7 @@
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
   width: 100%;
+  overflow-x: hidden;
 }
 body header {
   padding: 16px 16px 70px;
@@ -24,6 +25,7 @@ body main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
   row-gap: 40px;
   background: linear-gradient(180deg, white 0%, #F0F1FF 100%);
   padding: 16px 16px 80px;
@@ -168,11 +170,13 @@ body header .header__content .button--header:hover::before {
   body header:after {
     content: "";
     background: url("../images/image-hero-tablet.png") no-repeat center/cover;
+    background-size: cover;
+    background-position: left;
     position: absolute;
     z-index: 2;
     top: -86px;
-    left: 374px;
-    width: 695px;
+    right: 0px;
+    width: 394px;
     height: 723px;
     margin: unset;
   }

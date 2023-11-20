@@ -81,9 +81,9 @@ body {
 
       &:after {
         content: '';
-        @include background("../images/image-hero-tablet.png");
-        @include position(absolute, 2, $top: -86px, $left: 374px);
-        width: 695px;
+        @include background("../images/image-hero-tablet.png", cover, left);
+        @include position(absolute, 2, $top: -86px, $right: 0px);
+        width: 394px;
         height: 723px;
         margin: unset;
       }

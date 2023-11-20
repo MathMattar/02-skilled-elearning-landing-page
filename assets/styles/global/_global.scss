@@ -7,7 +7,7 @@
 body {
   font-family: $font;
   width: 100%;
-  // overflow-x: hidden;
+  overflow-x: hidden;
 
   header {
     padding: 16px 16px 70px;
@@ -19,7 +19,7 @@ body {
   }
 
   main {
-    @include flex($direction: row, $wrap: wrap);
+    @include flex($direction: row, $wrap: wrap, $justify: center);
     row-gap: 40px;
     background: linear-gradient(180deg, white 0%, #F0F1FF 100%);
     padding: 16px 16px 80px;
