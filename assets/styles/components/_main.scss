@@ -19,6 +19,7 @@ body {
       }
 
       .box {
+        @include flex(column);
         @include box(56px 29px 32px 28px);
         background-color: #ffffff;
 
@@ -36,6 +37,7 @@ body {
 
         a {
           @include link();
+          margin-top: auto;
 
           &:hover {
             @include link-hover();
