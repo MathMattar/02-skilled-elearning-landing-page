@@ -130,11 +130,11 @@ body {
       }
 
       &:after {
-        @include background("../images/image-hero-desktop@2x.webp", 991px, left top);
-        @include position($top: -146px, $left: 733px);
-        width: 100%;
+        @include background("../images/image-hero-desktop@2x.webp");
+        @include position($top: -146px, $left: 734px);
+        width: 1042px;
+        height: 937px;
         max-width: 1440px;
-        height: 100vh;
       }
     }
   }

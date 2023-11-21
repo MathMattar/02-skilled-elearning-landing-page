@@ -173,13 +173,11 @@ body header .header__image {
   }
   body header:after {
     background: url("../images/image-hero-desktop@2x.webp") no-repeat center/cover;
-    background-size: 991px;
-    background-position: left top;
     top: -146px;
-    left: 733px;
-    width: 100%;
+    left: 734px;
+    width: 1042px;
+    height: 937px;
     max-width: 1440px;
-    height: 100vh;
   }
 }
 body main {
