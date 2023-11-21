@@ -8,6 +8,9 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: "Plus Jakarta Sans", sans-serif;
   width: 100%;
   overflow-x: hidden;
@@ -34,7 +37,7 @@ body p {
   color: #83869a;
 }
 
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1400px) {
   body p {
     font-size: 18px;
     line-height: 28px;
@@ -45,6 +48,7 @@ body p {
 body header {
   padding: 16px 16px 70px;
   width: 100%;
+  max-width: 1440px;
 }
 body header nav {
   display: flex;
@@ -101,7 +105,7 @@ body header .header__image {
   height: 301px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 660px) {
   body header {
     position: relative;
     display: grid;
@@ -139,7 +143,7 @@ body header .header__image {
     margin: unset;
   }
 }
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1400px) {
   body header {
     row-gap: 172px;
     grid-template-columns: repeat(2, 1fr);
@@ -169,30 +173,37 @@ body header .header__image {
   body header:after {
     background: url("../images/image-hero-desktop@2x.webp") no-repeat center/cover;
     background-size: 991px;
-    background-position: 733px -125px;
-    top: 0;
-    right: 0;
+    background-position: left top;
+    top: -125px;
+    left: 733px;
     width: 100%;
+    max-width: 1440px;
     height: 100vh;
   }
 }
 body main {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
-  row-gap: 40px;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
   background: linear-gradient(180deg, white 0%, #f0f1ff 100%);
   padding: 16px 16px 80px;
   width: 100%;
 }
-body main .box--gradient {
+body main .container__box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: 40px;
+  max-width: 1400px;
+}
+body main .container__box .box--gradient {
   background-image: linear-gradient(to bottom, #ff6f48, #f02aa6);
   padding: 24px 29px 32px 28px;
 }
-body main .box {
+body main .container__box .box {
   position: relative;
   z-index: 1;
   padding: 56px 29px 32px 28px;
@@ -202,31 +213,31 @@ body main .box {
   max-width: 350px;
   max-height: 322px;
 }
-body main .box h2 {
+body main .container__box .box h2 {
   font-size: 24px;
   line-height: 32px;
   color: white;
 }
-body main .box h3 {
+body main .container__box .box h3 {
   font-size: 20px;
   line-height: 25px;
   color: #13183f;
 }
-body main .box p {
+body main .container__box .box p {
   padding: 16px 0 24px;
 }
-body main .box a {
+body main .container__box .box a {
   font-size: 18px;
   line-height: 28px;
   font-weight: 700;
   color: #f74780;
   text-decoration: none;
 }
-body main .box a:hover {
+body main .container__box .box a:hover {
   color: #ffa7c3;
   cursor: pointer;
 }
-body main .box--animation::after {
+body main .container__box .box--animation::after {
   content: "";
   background: url("../images/icon-animation.svg") no-repeat center/cover;
   position: absolute;
@@ -236,7 +247,7 @@ body main .box--animation::after {
   width: 56px;
   height: 56px;
 }
-body main .box--design::after {
+body main .container__box .box--design::after {
   content: "";
   background: url("../images/icon-design.svg") no-repeat center/cover;
   position: absolute;
@@ -246,7 +257,7 @@ body main .box--design::after {
   width: 56px;
   height: 56px;
 }
-body main .box--photography::after {
+body main .container__box .box--photography::after {
   content: "";
   background: url("../images/icon-photography.svg") no-repeat center/cover;
   position: absolute;
@@ -256,7 +267,7 @@ body main .box--photography::after {
   width: 56px;
   height: 56px;
 }
-body main .box--crypto::after {
+body main .container__box .box--crypto::after {
   content: "";
   background: url("../images/icon-crypto.svg") no-repeat center/cover;
   position: absolute;
@@ -266,7 +277,7 @@ body main .box--crypto::after {
   width: 56px;
   height: 56px;
 }
-body main .box--business::after {
+body main .container__box .box--business::after {
   content: "";
   background: url("../images/icon-business.svg") no-repeat center/cover;
   position: absolute;
@@ -277,30 +288,30 @@ body main .box--business::after {
   height: 56px;
 }
 
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1400px) {
   body main {
     padding: 24px 155px 140px;
     -moz-column-gap: 30px;
          column-gap: 30px;
     row-gap: 56px;
   }
-  body main .box--gradient {
+  body main .container__box .box--gradient {
     padding: 64px 32px 138px;
   }
-  body main .box {
+  body main .container__box .box {
     padding: 64px 32px 40px;
   }
-  body main .box h2 {
+  body main .container__box .box h2 {
     font-size: 32px;
     line-height: 40px;
     color: white;
   }
-  body main .box h3 {
+  body main .container__box .box h3 {
     font-size: 24px;
     line-height: 28px;
     color: #13183f;
   }
-  body main .box p {
+  body main .container__box .box p {
     padding: 24px 0;
   }
 }
@@ -340,7 +351,7 @@ body footer nav .button--footer:hover::before {
   opacity: 1;
 }
 
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1400px) {
   body footer nav {
     padding: 32px 165px;
   }

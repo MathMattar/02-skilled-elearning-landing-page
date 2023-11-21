@@ -2,60 +2,65 @@
 
 body {
   main {
-    @include flex($direction: row, $wrap: wrap, $justify: center);
-    row-gap: 40px;
-    column-gap: 10px;
+    @include flex($direction: row, $justify: center);
     background: linear-gradient(180deg, white 0%, #f0f1ff 100%);
     padding: 16px 16px 80px;
     width: 100%;
 
-    .box--gradient {
-      background-image: $gradient-ligth;
-      padding: 24px 29px 32px 28px;
-    }
+    .container__box {
+      @include flex($direction: row, $wrap: wrap, $justify: center);
+      column-gap: 10px;
+      row-gap: 40px;
+      max-width: 1400px;
 
-    .box {
-      @include box(56px 29px 32px 28px);
-
-      h2 {
-        @include mobile-heading-medium();
+      .box--gradient {
+        background-image: $gradient-ligth;
+        padding: 24px 29px 32px 28px;
       }
 
-      h3 {
-        @include mobile-heading-small();
-      }
+      .box {
+        @include box(56px 29px 32px 28px);
 
-      p {
-        padding: 16px 0 24px;
-      }
+        h2 {
+          @include mobile-heading-medium();
+        }
 
-      a {
-        @include link();
+        h3 {
+          @include mobile-heading-small();
+        }
 
-        &:hover {
-          @include link-hover();
+        p {
+          padding: 16px 0 24px;
+        }
+
+        a {
+          @include link();
+
+          &:hover {
+            @include link-hover();
+          }
         }
       }
-    }
 
-    .box--animation::after {
-      @include box-images("../images/icon-animation.svg");
-    }
+      .box--animation::after {
+        @include box-images("../images/icon-animation.svg");
+      }
 
-    .box--design::after {
-      @include box-images("../images/icon-design.svg");
-    }
+      .box--design::after {
+        @include box-images("../images/icon-design.svg");
+      }
 
-    .box--photography::after {
-      @include box-images("../images/icon-photography.svg");
-    }
+      .box--photography::after {
+        @include box-images("../images/icon-photography.svg");
+      }
 
-    .box--crypto::after {
-      @include box-images("../images/icon-crypto.svg");
-    }
+      .box--crypto::after {
+        @include box-images("../images/icon-crypto.svg");
+      }
 
-    .box--business::after {
-      @include box-images("../images/icon-business.svg");
+      .box--business::after {
+        @include box-images("../images/icon-business.svg");
+      }
     }
   }
 }
@@ -66,24 +71,25 @@ body {
       padding: 24px 155px 140px;
       column-gap: 30px;
       row-gap: 56px;
-
-      .box--gradient {
-        padding: 64px 32px 138px;
-      }
-
-      .box {
-        padding: 64px 32px 40px;
-
-        h2 {
-          @include desktop-heading-medium();
+      .container__box {
+        .box--gradient {
+          padding: 64px 32px 138px;
         }
 
-        h3 {
-          @include desktop-heading-small();
-        }
+        .box {
+          padding: 64px 32px 40px;
 
-        p {
-          padding: 24px 0;
+          h2 {
+            @include desktop-heading-medium();
+          }
+
+          h3 {
+            @include desktop-heading-small();
+          }
+
+          p {
+            padding: 24px 0;
+          }
         }
       }
     }

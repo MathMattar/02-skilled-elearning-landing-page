@@ -11,8 +11,8 @@ $gradient-ligth: linear-gradient(to bottom, #ff6f48, #f02aa6);
 $gradient-dark: linear-gradient(to bottom, #4851ff, #f02aa6);
 
 $breakpoints: (
-  "desktop": 1300px,
-  "tablet": 768px
+  "desktop": 1400px,
+  "tablet": 660px
 );
 
 @mixin mobile-heading-large {
@@ -236,16 +236,3 @@ $breakpoints: (
     }
   }
 }
-
-// @mixin desktop-heading-extra-large {
-//   font-size: 56px;
-//   line-height: 70px;
-//   color: $primary;
-// }
-
-// @mixin desktop-body {
-//   font-size: 18px;
-//   line-height: 28px;
-//   font-weight: 500;
-//   color: $secondary;
-// }

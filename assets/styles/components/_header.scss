@@ -4,6 +4,7 @@ body {
   header {
     padding: 16px 16px 70px;
     width: 100%;
+    max-width: 1440px;
 
     nav {
       @include flex(row, $justify: space-between, $items: center);
@@ -128,9 +129,10 @@ body {
       }
 
       &:after {
-        @include background("../images/image-hero-desktop@2x.webp", 991px, 733px -125px);
-        @include position($top: 0, $right: 0);
+        @include background("../images/image-hero-desktop@2x.webp", 991px, left top);
+        @include position($top: -125px, $left: 733px);
         width: 100%;
+        max-width: 1440px;
         height: 100vh;
       }
     }
