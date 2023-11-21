@@ -30,5 +30,9 @@ body {
     p {
       @include desktop-body();
     }
+
+    .button {
+      font-size: 18px;
+    }
   }
 }

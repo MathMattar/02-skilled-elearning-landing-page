@@ -44,6 +44,9 @@ body p {
     font-weight: 500;
     color: #83869a;
   }
+  body .button {
+    font-size: 18px;
+  }
 }
 body header {
   padding: 16px 16px 70px;
@@ -154,7 +157,7 @@ body header .header__image {
     height: 27.68px;
   }
   body header nav .button--nav {
-    padding: 14px 40.4px;
+    padding: 14px 35px;
   }
   body header nav .button--nav:hover {
     background-color: #666ca3;
@@ -169,7 +172,7 @@ body header .header__image {
     max-width: 445px;
   }
   body header .header__content .button--header {
-    padding: 19px 40.4px 16px;
+    padding: 19px 35px 16px;
   }
   body header:after {
     background: url("../images/image-hero-desktop@2x.webp") no-repeat center/cover;
@@ -319,6 +322,9 @@ body main .container__box .box--business::after {
   body main .container__box .box p {
     padding: 24px 0;
   }
+  body main .container__box .box a {
+    font-size: 18px;
+  }
 }
 body footer {
   width: 100%;
@@ -365,6 +371,6 @@ body footer nav .button--footer:hover::before {
     height: 27.68px;
   }
   body footer nav .button--footer {
-    padding: 14px 40.4px;
+    padding: 14px 35px;
   }
 }/*# sourceMappingURL=styles.css.map */

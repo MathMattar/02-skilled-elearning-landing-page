@@ -106,7 +106,7 @@ body {
         }
 
         .button--nav {
-          padding: 14px 40.4px;
+          padding: 14px 35px;
 
           &:hover {
             @include button($solid: $hover-primary);
@@ -125,7 +125,7 @@ body {
         }
 
         .button--header {
-          padding: 19px 40.4px 16px;
+          padding: 19px 35px 16px;
         }
       }
 
