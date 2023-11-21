@@ -131,7 +131,7 @@ body {
 
       &:after {
         @include background("../images/image-hero-desktop@2x.webp", 991px, left top);
-        @include position($top: -125px, $left: 733px);
+        @include position($top: -146px, $left: 733px);
         width: 100%;
         max-width: 1440px;
         height: 100vh;

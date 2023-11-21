@@ -175,7 +175,7 @@ body header .header__image {
     background: url("../images/image-hero-desktop@2x.webp") no-repeat center/cover;
     background-size: 991px;
     background-position: left top;
-    top: -125px;
+    top: -146px;
     left: 733px;
     width: 100%;
     max-width: 1440px;
@@ -213,6 +213,7 @@ body main .container__box .box {
   width: 100%;
   max-width: 350px;
   max-height: 322px;
+  background-color: #ffffff;
 }
 body main .container__box .box h2 {
   font-size: 24px;
@@ -292,6 +293,8 @@ body main .container__box .box--business::after {
 @media only screen and (min-width: 1400px) {
   body main {
     padding: 24px 155px 140px;
+  }
+  body main .container__box {
     -moz-column-gap: 30px;
          column-gap: 30px;
     row-gap: 56px;
