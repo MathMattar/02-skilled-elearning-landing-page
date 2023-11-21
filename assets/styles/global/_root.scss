@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap");
 
-$font: 'Plus Jakarta Sans', sans-serif;
+$font: "Plus Jakarta Sans", sans-serif;
 
-$primary: #13183F;
-$hover-primary: #666CA3;
-$secondary: #83869A;
-$tertiary: #F74780;
-$hover-tertiary: #FFA7C3;
-$gradient-ligth: linear-gradient(to bottom, #FF6F48, #F02AA6);
-$gradient-dark: linear-gradient(to bottom, #4851FF, #F02AA6);
+$primary: #13183f;
+$hover-primary: #666ca3;
+$secondary: #83869a;
+$tertiary: #f74780;
+$hover-tertiary: #ffa7c3;
+$gradient-ligth: linear-gradient(to bottom, #ff6f48, #f02aa6);
+$gradient-dark: linear-gradient(to bottom, #4851ff, #f02aa6);
 
 $breakpoints: (
-  "desktop": px,
-  "tablet": 768px,
+  "desktop": 1300px,
+  "tablet": 768px
 );
 
 @mixin mobile-heading-large {
@@ -37,7 +37,7 @@ $breakpoints: (
   font-size: 16px;
   line-height: 26px;
   font-weight: 500;
-  color: $secondary
+  color: $secondary;
 }
 
 @mixin link {
@@ -53,6 +53,31 @@ $breakpoints: (
   cursor: pointer;
 }
 
+@mixin desktop-heading-large {
+  font-size: 56px;
+  line-height: 70px;
+  color: $primary;
+}
+
+@mixin desktop-heading-medium {
+  font-size: 32px;
+  line-height: 40px;
+  color: white;
+}
+
+@mixin desktop-heading-small {
+  font-size: 24px;
+  line-height: 28px;
+  color: $primary;
+}
+
+@mixin desktop-body {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+  color: $secondary;
+}
+
 @mixin box($padding) {
   @include position(relative, 1);
   padding: $padding;
@@ -63,7 +88,7 @@ $breakpoints: (
   max-height: 322px;
 }
 
-@mixin box-images ($url) {
+@mixin box-images($url) {
   content: "";
   @include background($url);
   @include position(absolute, 2, -24px, 260px);
@@ -82,8 +107,7 @@ $breakpoints: (
   cursor: pointer;
 }
 
-@mixin button ($gradient: null, $solid: null, $padding: null) {
-
+@mixin button($gradient: null, $solid: null, $padding: null) {
   @if $padding {
     padding: $padding;
   }
@@ -135,8 +159,31 @@ $breakpoints: (
   }
 }
 
-@mixin background($url: null, $size: null, $position: null) {
+@mixin grid($areas: null, $columns: null, $rows: null, $c-gap: null, $r-gap: null) {
+  display: grid;
 
+  @if $areas {
+    grid-template-areas: $areas;
+  }
+
+  @if $columns {
+    grid-template-columns: $columns;
+  }
+
+  @if $rows {
+    grid-template-rows: $rows;
+  }
+
+  @if $c-gap {
+    column-gap: $c-gap;
+  }
+
+  @if $r-gap {
+    row-gap: $r-gap;
+  }
+}
+
+@mixin background($url: null, $size: null, $position: null) {
   @if $url {
     background: url($url) no-repeat center / cover;
   }
@@ -150,8 +197,7 @@ $breakpoints: (
   }
 }
 
-@mixin position ($position: null, $index: null, $top: null, $right: null, $bottom: null, $left: null) {
-
+@mixin position($position: null, $index: null, $top: null, $right: null, $bottom: null, $left: null) {
   @if $position {
     position: $position;
   }
@@ -177,7 +223,7 @@ $breakpoints: (
   }
 }
 
-@mixin responsive ($width, $type: min, ) {
+@mixin responsive($width, $type: min) {
   @if map\_has\_key($breakpoints, $width) {
     $width: map\_get($breakpoints, $width);
 
@@ -190,9 +236,6 @@ $breakpoints: (
     }
   }
 }
-
-
-
 
 // @mixin desktop-heading-extra-large {
 //   font-size: 56px;

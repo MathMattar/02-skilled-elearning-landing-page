@@ -1,15 +1,40 @@
-@import '../global/root';
+@import "../global/root";
 
 body {
   main {
+    @include flex($direction: row, $wrap: wrap, $justify: center);
+    row-gap: 40px;
+    column-gap: 10px;
+    background: linear-gradient(180deg, white 0%, #f0f1ff 100%);
+    padding: 16px 16px 80px;
+    width: 100%;
+
     .box--gradient {
       background-image: $gradient-ligth;
       padding: 24px 29px 32px 28px;
     }
 
     .box {
+      @include box(56px 29px 32px 28px);
+
+      h2 {
+        @include mobile-heading-medium();
+      }
+
+      h3 {
+        @include mobile-heading-small();
+      }
+
       p {
         padding: 16px 0 24px;
+      }
+
+      a {
+        @include link();
+
+        &:hover {
+          @include link-hover();
+        }
       }
     }
 
@@ -31,6 +56,36 @@ body {
 
     .box--business::after {
       @include box-images("../images/icon-business.svg");
+    }
+  }
+}
+
+@include responsive("desktop") {
+  body {
+    main {
+      padding: 24px 155px 140px;
+      column-gap: 30px;
+      row-gap: 56px;
+
+      .box--gradient {
+        padding: 64px 32px 138px;
+      }
+
+      .box {
+        padding: 64px 32px 40px;
+
+        h2 {
+          @include desktop-heading-medium();
+        }
+
+        h3 {
+          @include desktop-heading-small();
+        }
+
+        p {
+          padding: 24px 0;
+        }
+      }
     }
   }
 }
