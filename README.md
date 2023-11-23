@@ -35,11 +35,10 @@ Os usuarios devem ser capazes de:
 <br/>
 <img src="./assets/presentation/desktop.png" alt="Captura de tela desktop" width="1440px">
 <br/>
-<br/>
 
 ##### Comparação
 <br/>
-<img src="./assets/presentation/designComparison.gif" alt="Captura de tela desktop" width="50%">
+<img src="./assets/presentation/designComparison.gif" alt="Captura de tela desktop" width="578px>
 
 
 ### Link
