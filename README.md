@@ -39,7 +39,7 @@ Os usuarios devem ser capazes de:
 
 ##### Comparação
 <br/>
-<img src="./assets/presentation/teste.gif" alt="Captura de tela desktop" width="100%">
+<img src="./assets/presentation/designComparison.gif" alt="Captura de tela desktop" width="50%">
 
 
 ### Link
