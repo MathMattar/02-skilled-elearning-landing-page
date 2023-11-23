@@ -15,11 +15,12 @@ Esta é uma solução para o desafio [Skilled e-learning landing page](https://w
   - [Processo](#processo)
     - [Contrução](#contrução)
     - [Recursos úteis](#recursos-úteis)
-    - [Autor](#autor)
+  - [Autor](#autor)
 
 ---
 
 ## Descrição
+
 ### Desafio
 
 Os usuarios devem ser capazes de:
@@ -28,21 +29,33 @@ Os usuarios devem ser capazes de:
 - Ver os estados de foco de todos os elementos interativos da página.
 
 ### Captura de tela
-<!-- <img src="./assets/presentation/desktop.png" alt="Captura de tela desktop">
-<img src="./assets/presentation/designComparison.gif" alt="Captura de tela desktop"> -->
+
+<div align="center">
 
 ![Desktop](./assets/presentation/desktop.png)
+
+</br>
+
 ![Comparação](./assets/presentation/designComparison.gif)
+
+</div>
 
 ### Link
 - [Site](https://02-skilled-elearning-landing-page.vercel.app)
 - [Solução](https://www.frontendmentor.io/solutions/skilled-elearning-landing-page-YojlZWJh4b)
 
----
 
 ## Processo
 
 ### Contrução
+
+- Mobile First
+- HTML Semântico
+- SCSS
+- Flexbox
+- Grid
+- Mixin
+- Media Queries
 
 ### Recursos úteis
 
@@ -53,13 +66,23 @@ Os usuarios devem ser capazes de:
 - [Grid](https://www.w3schools.com/css/css_rwd_grid.asp)
 - [Media Queries](https://www.w3schools.com/css/css3_mediaqueries.asp)
 
-### Autor
+---
+
+## Autor
+
+<div align="center">
+
 
 <a href="https://www.linkedin.com/in/mathewsmattar/" target="_blank">
   <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mathewsmattar/">
 </a>
+
+
 <a href="mailto:mathmattar@hotmail.com" target="_blank">
   <img src="https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white">
 </a>
+
+
+</div>
 
 ---
