@@ -28,12 +28,11 @@ Os usuarios devem ser capazes de:
 - Ver os estados de foco de todos os elementos interativos da página.
 
 ### Captura de tela
-<img src="./assets/presentation/desktop.png" alt="Captura de tela desktop">
+<!-- <img src="./assets/presentation/desktop.png" alt="Captura de tela desktop">
+<img src="./assets/presentation/designComparison.gif" alt="Captura de tela desktop"> -->
 
-<br/>
-<br/>
-
-<img src="./assets/presentation/designComparison.gif" alt="Captura de tela desktop">
+![Desktop](./assets/presentation/desktop.png)
+![Comparação](./assets/presentation/designComparison.gif)
 
 ### Link
 - [Site](https://02-skilled-elearning-landing-page.vercel.app)
