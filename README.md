@@ -15,8 +15,6 @@ Esta é uma solução para o desafio [Skilled e-learning landing page](https://w
     - [Recursos úteis](#recursos-úteis)
   - [Autor](#autor)
 
----
-
 ## Descrição
 
 ### Desafio
