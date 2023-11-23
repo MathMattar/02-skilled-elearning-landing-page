@@ -1,27 +1,25 @@
 
-# Workit Landing Page
+# Workit Landing Page 
 
 Esta é uma solução para o desafio [Skilled e-learning landing page](https://www.frontendmentor.io/challenges/skilled-elearning-landing-page-S1ObDrZ8q) do site [Frontend Mentor](https://www.frontendmentor.io).
 
 ---
 
-### Índice
-
+## Índice
 - [Workit Landing Page](#workit-landing-page)
-    - [Índice](#índice)
+  - [Índice](#índice)
   - [Descrição](#descrição)
     - [Desafio](#desafio)
     - [Captura de tela](#captura-de-tela)
-        - [Desktop](#desktop)
-        - [Comparação](#comparação)
     - [Link](#link)
   - [Processo](#processo)
     - [Contrução](#contrução)
     - [Recursos úteis](#recursos-úteis)
     - [Autor](#autor)
 
-## Descrição
+---
 
+## Descrição
 ### Desafio
 
 Os usuarios devem ser capazes de:
@@ -30,26 +28,22 @@ Os usuarios devem ser capazes de:
 - Ver os estados de foco de todos os elementos interativos da página.
 
 ### Captura de tela
-
-##### Desktop
-<br/>
 <img src="./assets/presentation/desktop.png" alt="Captura de tela desktop" width="1440px">
+
+<br/>
 <br/>
 
-##### Comparação
-<br/>
-<img src="./assets/presentation/designComparison.gif" alt="Captura de tela desktop" width="578px>
-
+<img src="./assets/presentation/designComparison.gif" alt="Captura de tela desktop" width="1440px">
 
 ### Link
 - [Site](https://02-skilled-elearning-landing-page.vercel.app)
 - [Solução](https://www.frontendmentor.io/solutions/skilled-elearning-landing-page-YojlZWJh4b)
 
+---
+
 ## Processo
 
 ### Contrução
-
-
 
 ### Recursos úteis
 
@@ -68,3 +62,5 @@ Os usuarios devem ser capazes de:
 <a href="mailto:mathmattar@hotmail.com" target="_blank">
   <img src="https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white">
 </a>
+
+---
