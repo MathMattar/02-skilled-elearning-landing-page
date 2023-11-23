@@ -10,7 +10,7 @@ Esta é uma solução para o desafio [Skilled e-learning landing page](https://w
   - [Índice](#índice)
   - [Descrição](#descrição)
     - [Desafio](#desafio)
-    - [Captura de tela.](#captura-de-tela)
+    - [Captura de tela](#captura-de-tela)
     - [Link](#link)
   - [Processo](#processo)
     - [Contrução](#contrução)
@@ -28,7 +28,7 @@ Os usuarios devem ser capazes de:
 - Ver o layout ideal para a interface, independente do tamanho da tela do seu dispositivo.
 - Ver os estados de foco de todos os elementos interativos da página.
 
-### Captura de tela.
+### Captura de tela
 
 <div align="center">
 
