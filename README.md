@@ -33,7 +33,7 @@ Os usuarios devem ser capazes de:
 <br/>
 <br/>
 
-<img src="./assets/presentation/designComparison.gif" alt="Captura de tela desktop" width="1440px">
+<img src="./assets/presentation/designComparison.gif" alt="Captura de tela desktop">
 
 ### Link
 - [Site](https://02-skilled-elearning-landing-page.vercel.app)
