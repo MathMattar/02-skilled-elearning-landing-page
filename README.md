@@ -28,7 +28,7 @@ Os usuarios devem ser capazes de:
 - Ver os estados de foco de todos os elementos interativos da página.
 
 ### Captura de tela
-<img src="./assets/presentation/desktop.png" alt="Captura de tela desktop" width="1440px">
+<img src="./assets/presentation/desktop.png" alt="Captura de tela desktop">
 
 <br/>
 <br/>
