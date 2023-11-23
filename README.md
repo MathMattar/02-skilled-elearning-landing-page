@@ -12,6 +12,8 @@ Esta é uma solução para o desafio [Skilled e-learning landing page](https://w
   - [Descrição](#descrição)
     - [Desafio](#desafio)
     - [Captura de tela](#captura-de-tela)
+        - [Desktop](#desktop)
+        - [Comparação](#comparação)
     - [Link](#link)
   - [Processo](#processo)
     - [Contrução](#contrução)
@@ -29,14 +31,18 @@ Os usuarios devem ser capazes de:
 
 ### Captura de tela
 
-<figure style="text-align: center;">
-<img src="./assets/presentation/designComparison.gif" alt="Captura de tela desktop" width="60%">
-<figcaption style="text-weight: bold">Desktop</figcaption>
-<img src="./assets/presentation/designComparison.gif" alt="Captura de tela desktop" width="60%">
-</figure>
+##### Desktop
+<br/>
+<img src="./assets/presentation/desktop.png" alt="Captura de tela desktop" width="1440px">
+<br/>
+<br/>
+
+##### Comparação
+<br/>
+<img src="./assets/presentation/teste.gif" alt="Captura de tela desktop" width="100%">
+
 
 ### Link
-https://we.tl/t-FBEjOG8ZP8
 - [Site](https://02-skilled-elearning-landing-page.vercel.app)
 - [Solução](https://www.frontendmentor.io/solutions/skilled-elearning-landing-page-YojlZWJh4b)
 
