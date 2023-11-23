@@ -3,8 +3,6 @@
 
 Esta é uma solução para o desafio [Skilled e-learning landing page](https://www.frontendmentor.io/challenges/skilled-elearning-landing-page-S1ObDrZ8q) do site [Frontend Mentor](https://www.frontendmentor.io).
 
----
-
 ## Índice
 - [Workit Landing Page](#workit-landing-page)
   - [Índice](#índice)
@@ -66,7 +64,6 @@ Os usuarios devem ser capazes de:
 - [Grid](https://www.w3schools.com/css/css_rwd_grid.asp)
 - [Media Queries](https://www.w3schools.com/css/css3_mediaqueries.asp)
 
----
 
 ## Autor
 
@@ -84,5 +81,3 @@ Os usuarios devem ser capazes de:
 
 
 </div>
-
----
